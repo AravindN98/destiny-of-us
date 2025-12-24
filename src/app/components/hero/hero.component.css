@@ -1,0 +1,37 @@
+/* 🌸 Hero occupies space BELOW the top bar */
+.hero-wrapper {
+  min-height: calc(100vh - 90px); /* desktop nav height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 🎯 Centered content */
+.hero-content {
+  text-align: center;
+}
+
+/* 💖 Hero text */
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: #8b5d6e;
+  white-space: pre-line;
+}
+
+/* 📱 Mobile fix */
+@media (max-width: 600px) {
+  .hero-wrapper {
+    min-height: calc(100vh - 70px); /* mobile nav height */
+    padding-bottom: 90px; /* bottom nav safety */
+  }
+
+  .hero-content h1 {
+    font-size: 1.15rem;
+  }
+}

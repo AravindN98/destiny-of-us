@@ -1,0 +1,27 @@
+.floating-heart {
+  position: fixed;
+  bottom: -30px;
+  opacity: 0.8;
+  pointer-events: none;
+
+  z-index: 3; /* 👈 VERY IMPORTANT */
+
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Float upwards */
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,115 @@
+/* 🌸 Wrapper */
+.note-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+
+/* 🕯️ Soft candle glow */
+.note-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 10%,
+    rgba(255, 200, 160, 0.25),
+    transparent 60%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 💌 Paper look (more romantic) */
+.note-paper {
+  position: relative;
+  z-index: 1;
+
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 38px 34px;
+  border-radius: 26px;
+
+  background:
+    linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,245,248,0.95)),
+    repeating-linear-gradient(
+      #fff,
+      #fff 28px,
+      #f4eef1 29px
+    );
+
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.12),
+    inset 0 0 30px rgba(255, 200, 220, 0.25);
+
+  font-family: 'Dancing Script', cursive;
+}
+
+/* ✍️ Title */
+.note-paper h2 {
+  margin-bottom: 6px;
+  font-size: 1.7rem;
+  text-align: center;
+  color: #7a3f55;
+}
+
+/* 💖 Sub line */
+.note-sub {
+  display: block;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-bottom: 22px;
+  color: #a0647a;
+  letter-spacing: 0.3px;
+}
+
+/* ✍️ Text */
+.note-paper p {
+  font-size: 1.2rem;
+  line-height: 2;
+  white-space: pre-line;
+  color: #4a2f3a;
+}
+
+/* 🌷 Falling petals (unchanged, just softer) */
+.petal {
+  position: absolute;
+  top: -20px;
+  font-size: 22px;
+  opacity: 0.55;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* 📱 Mobile tuning */
+@media (max-width: 600px) {
+  .note-paper {
+    padding: 26px 22px;
+  }
+
+  .note-paper p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+  }
+}
+
+/* 💓 Heartbeat */
+.heart-beat {
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+  animation: heartbeat 0.6s ease;
+}
+
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.3); }
+  60%  { transform: scale(1); }
+}
+

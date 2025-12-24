@@ -1,0 +1,101 @@
+/* Title */
+.timeline-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+  color: #8b5d6e;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 143, 171, 0.4);
+}
+
+/* Item */
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 40px;
+}
+
+/* Dot */
+.timeline-dot {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  width: 14px;
+  height: 14px;
+  background: #ff8fab;
+  border-radius: 50%;
+}
+
+/* Card */
+.timeline-card {
+  background: rgba(255, 245, 248, 0.9);
+  padding: 18px 22px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Date */
+.timeline-date {
+  font-size: 0.85rem;
+  color: #a26a82;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Title */
+.timeline-card h4 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  color: #5c2c3d;
+}
+
+/* Text */
+.timeline-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #4a3b3f;
+}
+
+/* Closing note */
+.timeline-note {
+  max-width: 700px;
+  margin: 50px auto 0;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #6a3f52;
+  font-family: 'Playfair Display', serif;
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .timeline-title {
+    font-size: 1.4rem;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline-note {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,28 @@
+<div class="section">
+<section class="gallery-section">
+  <h2>Our Memories 📸</h2>
+
+  <div class="gallery-grid">
+    <div
+      class="photo-wrapper"
+      *ngFor="let photo of photos"
+      (click)="open(photo)"
+      (dblclick)="like(photo)">
+
+      <img [src]="photo" alt="Memory photo" />
+
+      <!-- ❤️ Like animation -->
+      <span
+        class="like-heart"
+        *ngIf="likedPhoto === photo">
+        ❤️
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- 🔍 Fullscreen Preview -->
+<div class="preview-overlay" *ngIf="selectedPhoto" (click)="close()">
+  <img [src]="selectedPhoto" class="preview-img" />
+</div>
+</div>

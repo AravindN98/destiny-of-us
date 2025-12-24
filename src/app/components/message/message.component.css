@@ -1,0 +1,65 @@
+/* Wrapper already handled by .section */
+
+/* 💌 Letter card */
+.love-letter {
+  background: rgba(255, 245, 248, 0.85);
+  padding: 36px 32px;
+  border-radius: 22px;
+  max-width: 760px;
+  margin: auto;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+  font-family: 'Playfair Display', serif;
+}
+
+/* Paragraph styling */
+.love-letter p {
+  font-size: 1.05rem;
+  line-height: 2;
+  letter-spacing: 0.3px;
+  color: #4a3b3f;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+/* Opening line */
+.love-letter .opening {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #8b5d6e;
+}
+
+/* Highlight line */
+.love-letter .highlight {
+  font-size: 1.1rem;
+  color: #a64d6d;
+  font-weight: 500;
+}
+
+/* Divider */
+.love-letter .divider {
+  text-align: center;
+  margin: 28px 0;
+  font-size: 1.2rem;
+  color: #c48aa0;
+}
+
+/* Closing paragraph */
+.love-letter .closing {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #7a3f55;
+}
+
+/* 📱 Mobile polish */
+@media (max-width: 600px) {
+  .love-letter {
+    padding: 26px 20px;
+  }
+
+  .love-letter p {
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+}

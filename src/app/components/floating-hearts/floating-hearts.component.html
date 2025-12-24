@@ -1,0 +1,9 @@
+<span
+  class="floating-heart"
+  *ngFor="let h of hearts"
+  [style.left.%]="h.left"
+  [style.animationDelay.s]="h.delay"
+  [style.animationDuration.s]="h.duration"
+  [style.fontSize.px]="h.size">
+  💖
+</span>

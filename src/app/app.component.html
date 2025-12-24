@@ -1,0 +1,55 @@
+<div [class.night-theme]="isNight">
+
+  <app-floating-hearts></app-floating-hearts>
+
+  <!-- LOCK SCREEN -->
+  <app-lock-screen
+    *ngIf="!unlocked"
+    (unlocked)="unlockSite()">
+  </app-lock-screen>
+
+  <!-- MAIN CONTENT -->
+  <div *ngIf="unlocked">
+    
+     <app-music-player></app-music-player>
+
+<div class="top-bar">
+  <button (click)="show('hero')">🏠</button>
+  <button (click)="show('message')">💌</button>
+  <button (click)="show('timeline')">🕰️</button>
+  <button (click)="show('gallery')">📸</button>
+  <button (click)="show('new-note')">📝</button>
+  <button (click)="show('destiny')">✨</button>
+</div>
+
+<!-- <div class="top-bar">
+  <button
+    [class.active]="activeSection === 'hero'"
+    (click)="show('hero')">🏠</button>
+
+  <button
+    [class.active]="activeSection === 'message'"
+    (click)="show('message')">💌</button>
+
+  <button
+    [class.active]="activeSection === 'timeline'"
+    (click)="show('timeline')">🕰️</button>
+
+  <button
+    [class.active]="activeSection === 'gallery'"
+    (click)="show('gallery')">📸</button>
+
+</div> -->
+
+    <app-music-player></app-music-player>
+
+   <app-hero *ngIf="activeSection === 'hero'"></app-hero>
+<app-message *ngIf="activeSection === 'message'"></app-message>
+<app-timeline *ngIf="activeSection === 'timeline'"></app-timeline>
+<app-gallery *ngIf="activeSection === 'gallery'"></app-gallery>
+<app-new-note *ngIf="activeSection === 'new-note'"></app-new-note>
+<app-destiny *ngIf="activeSection === 'destiny'"></app-destiny>
+
+  </div>
+</div>
+

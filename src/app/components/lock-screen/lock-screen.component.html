@@ -1,0 +1,69 @@
+<div class="lock-wrapper">
+
+  <!-- ✨ Sparkles -->
+  <span class="sparkle" *ngFor="let i of [].constructor(15)">✨</span>
+
+  <div class="lock-card"
+       [class.shake]="wrongAttempt"
+       (click)="startHeartbeat()"
+       (keydown)="startHeartbeat()">
+
+    <h1>💖 Just for You, {{ name }} 
+      This is my way of holding you close, even through a screen 💖
+    </h1>
+  <!-- <h2> This is my way of holding you close, even through a screen </h2> -->
+
+    <p class="subtitle">
+      I made something special for you.<br />
+      A small place filled with feelings 🌸
+    </p>
+
+    <input
+      type="password"
+      placeholder="DDMMYYYY"
+      [(ngModel)]="dob"
+    />
+
+    <button (click)="unlock()">
+      Unlock the Surprise 💌
+    </button>
+
+    <p class="hint">
+      Enter a date that made your Parents smile the most ✨
+    </p>
+
+    <!-- <p class="extra-hint" *ngIf="showHintMessage">
+        Try the date that made your Parents smile the most 😄💖
+    </p> -->
+
+
+  </div>
+</div>
+
+
+<!-- <div class="lock-wrapper">
+  <div class="lock-card">
+
+    <h1>💖 Just for You 💖</h1>
+
+    <p class="subtitle">
+      This little space holds something made with love.<br />
+      Enter your special date to continue 🌸
+    </p>
+
+    <input
+      type="password"
+      placeholder="DDMMYYYY"
+      [(ngModel)]="dob"
+    />
+
+    <button (click)="unlock()">
+      Unlock My Heart 💌
+    </button>
+
+    <p class="hint">
+      A small key to something made just for you 💖
+    </p>
+
+  </div>
+</div> -->
