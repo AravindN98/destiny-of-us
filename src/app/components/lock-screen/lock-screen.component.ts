@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class LockScreenComponent {
   dob = '';
-  correctDob = '13032001'; // CHANGE DOB
+  correctDob = 'PreeAvi240925'; // CHANGE DOB
   name = 'Preethu Ma'; // CHANGE NAME
   showHintMessage = false;
 
@@ -55,16 +55,4 @@ export class LockScreenComponent {
 }
 
 
-  // unlock() {
-  //   this.startHeartbeat();
-
-  //   if (this.dob === this.correctDob) {
-  //     this.heartbeatAudio.pause();
-  //     this.heartbeatAudio.currentTime = 0;
-  //     this.unlocked.emit();
-  //   } else {
-  //     this.wrongAttempt = true;
-  //     setTimeout(() => (this.wrongAttempt = false), 600);
-  //   }
-  // }
 }

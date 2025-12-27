@@ -15,7 +15,7 @@ You are not just a part of me. You are the whole of me🧿
 Talking with you feels like a therapy💟
 Please remember no matter how tough life gets Avii is here for you all the time.
 Never take stress about work life, remember it's just a part of life.
-Let's live our life with no regrets Babyyyyyyyyy❤️
+Let's live our life with no regrets Baby❤️
 And every heartbeat of this space whispers only one name and it is Preethu Ma 💖
 `;
 
