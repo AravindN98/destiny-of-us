@@ -20,6 +20,7 @@
   <button (click)="show('gallery')">📸</button>
   <button (click)="show('new-note')">📝</button>
   <button (click)="show('destiny')">✨</button>
+  <button (click)="show('new-year')">🎆</button>
 </div>
 
 <!-- <div class="top-bar">
@@ -49,6 +50,7 @@
 <app-gallery *ngIf="activeSection === 'gallery'"></app-gallery>
 <app-new-note *ngIf="activeSection === 'new-note'"></app-new-note>
 <app-destiny *ngIf="activeSection === 'destiny'"></app-destiny>
+<app-new-year *ngIf="activeSection === 'new-year'"></app-new-year>
 
   </div>
 </div>

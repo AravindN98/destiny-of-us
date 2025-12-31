@@ -13,6 +13,7 @@ import { FloatingHeartsComponent } from './components/floating-hearts/floating-h
 import { MusicPlayerComponent } from './components/music-player/music-player.component';
 import { NewNoteComponent } from './components/new-note/new-note.component';
 import { DestinyComponent } from './components/destiny/destiny.component';
+import { NewYearComponent } from './components/new-year/new-year.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DestinyComponent } from './components/destiny/destiny.component';
     FloatingHeartsComponent,
     MusicPlayerComponent,
     NewNoteComponent,
-    DestinyComponent
+    DestinyComponent,
+    NewYearComponent
   ],
   imports: [
     BrowserModule,

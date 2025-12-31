@@ -10,7 +10,7 @@ export class AppComponent {
   unlocked = false;
   isNight = false;
 
-  activeSection: 'hero' | 'message' | 'timeline' | 'gallery' | 'new-note' | 'destiny' = 'hero';
+  activeSection: 'hero' | 'message' | 'timeline' | 'gallery' | 'new-note' | 'destiny' | 'new-year'= 'hero';
 
 
   @ViewChild(MusicPlayerComponent)
@@ -29,7 +29,7 @@ export class AppComponent {
     this.isNight = !this.isNight;
   }
 
-show(section: 'hero' | 'message' | 'timeline' | 'gallery' | 'new-note' | 'destiny') {
+show(section: 'hero' | 'message' | 'timeline' | 'gallery' | 'new-note' | 'destiny' | 'new-year') {
   this.activeSection = section;
 
   switch (section) {
@@ -55,6 +55,10 @@ show(section: 'hero' | 'message' | 'timeline' | 'gallery' | 'new-note' | 'destin
 
     case 'destiny':
       this.musicPlayer.play('assets/destiny.mp3');
+      break;
+
+    case 'new-year':
+      this.musicPlayer.play('assets/newyear.mp3');
       break;
 
       
